@@ -29,6 +29,7 @@ export default async function(eleventyConfig) {
     },
     templateFormats: ["hbs", "md", "html"],
     htmlTemplateEngine: "hbs",
-    markdownTemplateEngine: "hbs"
+    markdownTemplateEngine: "hbs",
+    pathPrefix: "/superuser-so/"
   };
 }
