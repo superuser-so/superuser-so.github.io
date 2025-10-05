@@ -8,6 +8,7 @@ tags:
   - analytics
   - growth
 layout: blog-post.hbs
+permalink: /blog/5-metrics-every-saas-founder-should-track/
 ---
 
 As a SaaS founder, you're drowning in data. Page views, sign-ups, clicks, sessions—the list goes on. But which metrics actually matter?

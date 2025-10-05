@@ -8,6 +8,7 @@ tags:
   - company
   - announcement
 layout: blog-post.hbs
+permalink: /blog/why-we-built-superuser/
 ---
 
 When we started building SaaS products as solopreneurs, we quickly ran into a frustrating problem: the tools we needed to understand and support our users cost more than we were making.

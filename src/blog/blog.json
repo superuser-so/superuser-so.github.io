@@ -1,5 +1,4 @@
 {
   "layout": "base.hbs",
-  "tags": "post",
-  "permalink": "/blog/{{ title | slugify }}/"
+  "tags": "post"
 }

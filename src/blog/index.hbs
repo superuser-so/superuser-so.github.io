@@ -22,9 +22,7 @@ description: Insights, tips, and stories about building better SaaS products wit
           {{#if this.data.tags}}
           <div class="flex gap-2 mb-3">
             {{#each this.data.tags}}
-            {{#unless (eq this "post")}}
             <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs font-medium">{{this}}</span>
-            {{/unless}}
             {{/each}}
           </div>
           {{/if}}

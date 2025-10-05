@@ -8,6 +8,7 @@ tags:
   - support
   - best-practices
 layout: blog-post.hbs
+permalink: /blog/customer-support-best-practices/
 ---
 
 When you're a solo founder or small team, providing great customer support feels impossible. You're building the product, marketing it, doing sales—and now you need to be available 24/7 for support too?
