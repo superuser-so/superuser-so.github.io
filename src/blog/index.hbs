@@ -1,0 +1,64 @@
+---
+layout: base.hbs
+title: Blog
+description: Insights, tips, and stories about building better SaaS products with analytics and customer support.
+---
+
+<section class="bg-gradient-to-br from-primary-600 to-accent-600 text-white py-20">
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="text-5xl font-bold mb-4 text-center">Blog</h1>
+    <p class="text-xl text-center text-primary-100 max-w-3xl mx-auto">
+      Insights and stories from the world of SaaS analytics and customer support
+    </p>
+  </div>
+</section>
+
+<section class="section-padding">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{#each collections.post}}
+      <article class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition">
+        <div class="p-6">
+          {{#if this.data.tags}}
+          <div class="flex gap-2 mb-3">
+            {{#each this.data.tags}}
+            {{#unless (eq this "post")}}
+            <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs font-medium">{{this}}</span>
+            {{/unless}}
+            {{/each}}
+          </div>
+          {{/if}}
+
+          <h2 class="text-2xl font-bold mb-3">
+            <a href="{{this.url}}" class="hover:text-primary-600 transition">{{this.data.title}}</a>
+          </h2>
+
+          {{#if this.data.excerpt}}
+          <p class="text-gray-600 mb-4">{{this.data.excerpt}}</p>
+          {{/if}}
+
+          <div class="flex items-center text-sm text-gray-500 space-x-3">
+            {{#if this.data.author}}
+            <span>{{this.data.author}}</span>
+            {{/if}}
+            {{#if this.data.date}}
+            <span>•</span>
+            <time datetime="{{this.data.date}}">{{this.data.date}}</time>
+            {{/if}}
+          </div>
+
+          <a href="{{this.url}}" class="inline-block mt-4 text-primary-600 font-medium hover:text-primary-700">
+            Read more &rarr;
+          </a>
+        </div>
+      </article>
+      {{/each}}
+    </div>
+
+    {{#unless collections.post}}
+    <div class="text-center text-gray-500 py-16">
+      <p class="text-xl">No blog posts yet. Check back soon!</p>
+    </div>
+    {{/unless}}
+  </div>
+</section>
