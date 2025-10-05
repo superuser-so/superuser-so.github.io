@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "eleventy --serve --watch",
-    "build": "eleventy",
+    "build": "eleventy && vite build",
     "start": "eleventy --serve",
     "clean": "rm -rf _site"
   },

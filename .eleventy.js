@@ -16,6 +16,7 @@ export default async function(eleventyConfig) {
 
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({"src/css": "css"});
 
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/css/");
